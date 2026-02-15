@@ -1,0 +1,29 @@
+body{
+    margin:0;
+    font-family:'Inter', Arial, sans-serif;
+}
+
+.crazyform {
+    background-color: #f4f1e7;
+}
+.guerilla {
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom:10px;
+    width:1240px;
+    max-width: 1240px;
+}
+.bouncy {
+    background-color: #393537;
+    color:white;
+    text-align:center;
+    padding-top:10px;
+    padding-bottom:20px;
+    float: left;
+    width: 100%;
+}
+.work td {
+    padding:10px;
+    text-align: left;
+
+}

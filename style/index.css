@@ -1,0 +1,554 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    box-sizing: border-box;
+}
+
+.loader {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+
+}
+
+.body {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    float: left;
+}
+
+.whead {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+    height: 60px;
+    background-color: #e1dfd8;
+    border-bottom: 3px solid #393937;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+
+}
+
+.header-content {
+    max-width: 1240px;
+    width: 1240px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-text {
+    color: #444442;
+    font-size: 24px;
+    float: left;
+    padding: 17px;
+
+}
+
+.menu-list {
+    border: 0;
+}
+
+.separator {
+    width: 2px;
+    height: 22px;
+    background-color: #393937;
+    /* height: fit-content; */
+}
+
+.section {
+    width: 100%;
+    height: auto;
+    padding: 40px;
+}
+
+.section1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 75px;
+    float: left;
+}
+
+.header2 {
+    width: 100%;
+    height: 30px;
+    background-color: #393937;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cls2 {
+    transition: transform 0.3s ease;
+}
+
+.cls2:hover {
+    transform: scale(1.02);
+}
+
+.fake_1 {
+    color: #d2d2d2;
+    font-size: 14px;
+}
+
+.fake_1:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.button1 {
+    padding: 17px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.button1:hover {
+    background-color: #e1dfd8;
+    text-decoration: underline;
+}
+
+.back {
+    background: url("https://eco-cdn.iqpc.com/eco/images/channel_content/images/boxer.webp");
+    max-width: 1400px;
+    width: 1400px;
+    height: calc(100vh - 140px);
+    border-radius: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    /* position: relative; */
+}
+
+.picture {
+    max-width: 1240px;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-left: 10px;
+    float: left;
+}
+
+.back2 {
+    position: relative;
+    width: 100%;
+    height: calc(100% + 80px);
+    background: linear-gradient(#00000007, rgba(0, 0, 0, 0.918));
+    transition: transform 0.3s ease;
+}
+
+.back2:hover {
+    transform: translateY(-80px);
+}
+
+.big-text {
+    position: absolute;
+    bottom: 110px;
+    left: 30px;
+    color: #FFF;
+}
+
+.big-text-2 {
+    color: #000;
+    margin-right: 30px;
+}
+
+.back3 {
+    background-color: #fff;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.xcv {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.table1 {
+    border: 0;
+    max-width: 1240px;
+}
+
+.less-margin-top {
+    margin-top: 0px;
+}
+
+.button3 {
+    padding: 14px;
+    border-radius: 36px;
+    border: 3px solid #393937;
+    color: #393937;
+    font-weight: bolder;
+    font-size: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button3:hover::before {
+    top: 0;
+}
+
+.button3:hover {
+    color: #fff;
+}
+
+.button3::before {
+    background-color: #393937;
+    content: '';
+    padding: 28px;
+    width: calc(100% - 54px);
+    ;
+    border-radius: 23px;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    transition: top 0.3s ease;
+    z-index: -1;
+}
+
+.button2 {
+    padding: 14px;
+    border-radius: 36px;
+    border: 3px solid #393937;
+    color: #393937;
+    font-weight: bolder;
+    font-size: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button2:hover::before {
+    top: 0;
+}
+
+.button2:hover {
+    color: #fff;
+}
+
+.button2::before {
+    background-color: #393937;
+    content: '';
+    padding: 28px;
+    width: calc(100% - 53px);
+    border-radius: 23px;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    transition: top 0.3s ease;
+    z-index: -1;
+}
+
+.x1 {
+    background: url('https://aerospace.honeywell.com/content/dam/aerobt/en/images/horizontal/M1-Abrams-Tank-Banner.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.x2 {
+    background: url('https://upload.wikimedia.org/wikipedia/commons/a/a2/Decisive_Action_Rotation_13-04_130218-A-ML570-001.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.x3 {
+    background: url('https://topwar.ru/uploads/posts/2012-05/1337740912_T-90A_shtora_active.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.x4 {
+    background: url('https://www.armadainternational.com/wp-content/uploads/2023/10/M109-52-ft-BAE-10-23.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.x5 {
+    background: url('https://cms.westjavatoday.com/uploads/images/2025/05/image_750x500_681bf89da8cd1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.x6 {
+    background: url('https://www.army-technology.com/wp-content/uploads/sites/3/2024/06/Image-4-Abrams-M1A2-SEPv3-Main-Battle-Tank.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.x7 {
+    background: url('https://www.19fortyfive.com/wp-content/uploads/2025/01/M1-Abrams-Tank-U.S.-Army-1024x576.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.x8 {
+    background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Leopard_2_A7V_313_Bad_Frankenhausen_2024.JPG/500px-Leopard_2_A7V_313_Bad_Frankenhausen_2024.JPG');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.x9 {
+    background: url('https://www.airspace-review.com/wp-content/uploads/2024/01/Leopard-2A7HU.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.x10 {
+    background: url('https://upload.wikimedia.org/wikipedia/commons/6/6b/M1117_Armored_Security_Vehicle.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.x11 {
+    background: url('https://photo.weaponsystems.net/image/s-carousel/n-ve_sct_staghound_p02.jpg/--/img/ws/ve_sct_staghound_p02.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.x12 {
+    background: url('https://www.airspace-review.com/wp-content/uploads/2024/01/Leopard-2A7HU.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.x13 {
+    background: url('https://live.staticflickr.com/4516/38358131394_267a6769b8_b.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container1 {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #fff;
+    margin: 10px;
+    float: left;
+}
+
+.roundimages {
+    border-radius: 25%;
+}
+
+a {
+    text-decoration: none;
+    color: #000000
+}
+
+a:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.ulpading {
+    padding-left: 20px;
+}
+
+.olpading {
+    padding-left: 20px;
+}
+
+/* .container1 {
+    height: 150px;
+    width: 600px;
+} */
+
+/* !-- BARU NIHH -- ! */
+
+.abrams1 {
+    background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/M1A2_Sep_v3.jpg/1280px-M1A2_Sep_v3.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.abrams2 {
+    background: url('https://i0.wp.com/www.zona-militar.com/wp-content/uploads/2025/09/Polonia-M1A2-Sepv3.jpeg?fit=1049%2C746&ssl=1');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.abrams3 {
+    background: url('https://res.cloudinary.com/momentum-media-group-pty-ltd/image/upload/v1731022021/20241105army8270357_3503_mqcgil.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.abrams4 {
+    background: url('https://www.defensenews.com/resizer/tLW73RaHex3zH0FmL2bwbe0iPKQ=/arc-photo-archetype/arc3-prod/public/AEPPYUDA2VH5TLZKTJXV3FUC7A.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.leopard1 {
+    background: url('https://below-the-turret-ring.com/wp-content/uploads/2021/09/Leopard-2A7V.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.leopard2 {
+    background: url('https://live.staticflickr.com/4516/38358131394_267a6769b8_b.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.leopard3 {
+    background: url('https://www.airspace-review.com/wp-content/uploads/2024/01/Leopard-2A7HU.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.leopard4 {
+    background: url('https://english.defensearabia.com/wp-content/uploads/2023/04/inbound3925964744276135968.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.rowgallery {
+    padding-top: 10 px;
+    padding-bottom: 10 px;
+    margin-top: 10 px;
+    margin-bottom: 10 px;
+    border-collapse: separate border-spacing: 20px;
+}
+
+.tdtank {
+    width: auto;
+    height: auto;
+}
+
+.trtank {
+    margin-bottom: 50px;
+}
+
+.tabletank {
+    max-width: 1240px;
+    border-collapse: separate;
+    border-spacing: 15px
+}
+
+.nationtext {
+    color: #ffffff;
+    font-size: 30px;
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    font-weight: bold;
+}
+
+.gerflag {
+    background: url('https://i0.wp.com/flag-shop.ca/wp-content/uploads/2024/11/img-flag-shop-flags-of-the-world-germany-flag-1-2.webp?fit=1080%2C540&ssl=1');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.usaflag {
+    background: url('https://flagfactoryshop.com/image/cache/catalog/products/flags/national/mockups/usa-1200x720.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.tankpic {
+    max-width: 1240px;
+    width: 350px;
+    height: 200px;
+    border-radius: 20px;
+    overflow: hidden;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+}
+
+.trnation {
+    margin-bottom: 25px
+}
+
+/* .container1 {
+    height: 150px;
+    width: 600px;
+} */

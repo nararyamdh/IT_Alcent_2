@@ -1,0 +1,21 @@
+.textbox-1 {
+    width: 1000px;
+    max-width: 1000px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 18px;
+    border: 0;
+    border-bottom: 3px solid #393937;
+    outline: none;
+    background: none;
+    margin-top: 20px;
+}
+
+.textbox-1:focus {
+    border-bottom: 3px solid #0d45c8;
+}
+
+.xx3 {
+    min-width: 1000px;
+}
